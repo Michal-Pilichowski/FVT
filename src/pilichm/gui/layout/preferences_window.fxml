@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="pilichm.gui.control.preferencesController"
+            prefHeight="400.0"
+            prefWidth="600.0">
+
+    <children>
+
+        <CheckBox fx:id="check_box_enable_debugging"
+                  layoutX="16.0"
+                  layoutY="-300.0"
+                  mnemonicParsing="false"
+                  text="Enable debugging" />
+
+        <Slider fx:id="slider_number_of_repetitions"
+                min="0"
+                max="10000"
+                layoutX="34.0"
+                layoutY="-230.0" />
+
+        <Slider fx:id="slider_size_of_intersection"
+                min="0"
+                max="15"
+                layoutX="34.0"
+                layoutY="-150.0" />
+
+        <Label layoutX="27.0"
+               layoutY="-260.0"
+               text="Number of repetitions" />
+
+        <Label layoutX="41.0"
+               layoutY="-180.0"
+               text="Size of intersection" />
+
+        <Label layoutX="14.0"
+                layoutY="-360.0"
+                prefHeight="40.0"
+                prefWidth="180.0"
+                text="Preferences">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+
+        <Label layoutX="10.0"
+               layoutY="-230.0"
+               text="0" />
+
+        <Label layoutX="194.0"
+                layoutY="-230.0"
+                text="10000" />
+
+        <Label fx:id="label_current_number_of_repetitions"
+               layoutX="87.0"
+               layoutY="-210.0"
+               text="3000" />
+
+        <Label layoutX="10.0"
+               layoutY="-150.0"
+               text="0" />
+
+        <Label layoutX="194.0"
+               layoutY="-150.0"
+               text="15" />
+
+        <Label fx:id="label_current_size_of_intersection"
+               layoutX="99.0"
+               layoutY="-130.0"
+               text="5" />
+
+    </children>
+
+</AnchorPane>

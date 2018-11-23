@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane
+        fx:controller="pilichm.gui.control.AddSignatureController"
+        maxHeight="-Infinity"
+        maxWidth="-Infinity"
+        minHeight="-Infinity"
+        minWidth="-Infinity"
+        prefHeight="500.0"
+        prefWidth="700.0"
+        xmlns="http://javafx.com/javafx/8.0.171"
+        xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+
+        <Label
+                layoutX="14.0"
+                layoutY="-360.0"
+                prefHeight="40.0"
+                prefWidth="180.0"
+                text="Add signature">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+
+        <Button
+                layoutX="91.0"
+                layoutY="50.0"
+                mnemonicParsing="false"
+                text="Load File"
+                onAction="#selectSourceFile"/>
+        <Button
+                layoutX="226.0"
+                layoutY="50.0"
+                mnemonicParsing="false"
+                text="Calculate Signature" />
+        <Button
+                layoutX="431.0"
+                layoutY="50.0"
+                mnemonicParsing="false"
+                text="Save Signature" />
+        <ImageView
+                fx:id="calculated_image"
+                onMouseClicked="#zoomSignature"
+                fitHeight="2600.0"
+                fitWidth="300.0"
+                layoutX="350.0"
+                layoutY="-320.0"
+                pickOnBounds="true"
+                preserveRatio="true"/>
+        <ImageView
+                fx:id="source_image"
+                fitHeight="200.0"
+                fitWidth="250.0"
+                layoutX="50.0"
+                layoutY="-302.0"
+                pickOnBounds="true"
+                preserveRatio="true"/>
+        <Label
+                layoutX="103.0"
+                layoutY="-130.0"
+                text="Source Image" />
+        <Label
+                layoutX="471.0"
+                layoutY="-130.0"
+                text="Result" />
+    </children>
+</AnchorPane>

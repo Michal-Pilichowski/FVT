@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<AnchorPane
+        xmlns="http://javafx.com/javafx"
+        xmlns:fx="http://javafx.com/fxml"
+        fx:controller="pilichm.gui.control.MenuController"
+        prefHeight="400.0" prefWidth="600.0">
+
+    <MenuBar
+            BorderPane.alignment="CENTER"
+            fx:id="main_menu_bar">
+        <menus>
+            <Menu
+                    mnemonicParsing="false"
+                    text="File">
+                <items>
+
+                    <MenuItem mnemonicParsing="false"
+                            text="Add signature"
+                            onAction="#moveToAddSignatureScreen"/>
+
+                    <MenuItem mnemonicParsing="false"
+                            text="Compare Image" />
+
+                    <MenuItem mnemonicParsing="false"
+                            text="Compare Signatures" />
+
+                    <MenuItem mnemonicParsing="false"
+                            text="Browse signatures" />
+
+                    <SeparatorMenuItem
+                            mnemonicParsing="false" />
+
+                    <MenuItem mnemonicParsing="false"
+                            text="Preferences..."
+                            onAction="#moveToPreferencesScreen"/>
+
+                    <SeparatorMenuItem
+                            mnemonicParsing="false" />
+
+                    <MenuItem mnemonicParsing="false"
+                            text="Quit"
+                            onAction="#exitProgram"/>
+                </items>
+            </Menu>
+            <Menu
+                    mnemonicParsing="false"
+                    text="Help">
+                <items>
+                    <MenuItem mnemonicParsing="false"
+                            text="About MyHelloApp" />
+
+                    <MenuItem mnemonicParsing="false"
+                            text="About Author" />
+
+                    <MenuItem mnemonicParsing="false"
+                            text="About Algorithm" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+
+</AnchorPane>
